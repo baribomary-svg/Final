@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerDashboard.Designer.cs">
-      <DependentUpon>CustomerDashboard.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +71,12 @@
     <Compile Include="CashierDashboard.Designer.cs">
       <DependentUpon>CashierDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS.Designer.cs">
+      <DependentUpon>POS.cs</DependentUpon>
+    </Compile>
     <Compile Include="TechnicianDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +91,14 @@
     <EmbeddedResource Include="CashierDashboard.resx">
       <DependentUpon>CashierDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardCustomer.resx">
+      <DependentUpon>DashBoardCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginDashboard.resx">
       <DependentUpon>LoginDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS.resx">
+      <DependentUpon>POS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,6 +127,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\2" />
     <None Include="Resources\e5af0929-5348-4bbc-b930-797c20d91122.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +144,114 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Bicicleta Elétrica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trolley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trolley %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compliant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HERO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HERO-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drop-Shipping-350w-48v-White-Pink-Women-Urban-Step-Through-Electric-City-Bike-Electric-Tricycle-3-Wheel-Electric-Bike-Big-Power-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drop-Shipping-350w-48v-White-Pink-Women-Urban-Step-Through-Electric-City-Bike-Electric-Tricycle-3-Wheel-Electric-Bike-Big-Power-Photoroom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drop-Shipping-350w-48v-White-Pink-Women-Urban-Step-Through-Electric-City-Bike-Electric-Tricycle-3-Wheel-Electric-Bike-Big-Power.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C70-mp4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7a6ef13fa904784f3a4c14ef8c8b132f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26199550-ada8-420e-8bf5-1c875b619a30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drop-Shipping-350w-48v-White-Pink-Women-Urban-Step-Through-Electric-City-Bike-Electric-Tricycle-3-Wheel-Electric-Bike-Big-Power-Photoroom2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chinese-Manufacturer-of-EEC-Certification-Electric-Bicycle-Road-Bike-ISO-9001-2015-OEM-ODM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_lq4gealq4gealq4g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_lq4gealq4gealq4g %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_lq4gealq4gealq4g %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_lq4gealq4gealq4g %283%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,9 +11,9 @@ using System.Xml.Linq;
 
 namespace FinalProject
 {
-    public partial class Form1 : Form
+    public partial class LoginDashboard : Form
     {
-        public Form1()
+        public LoginDashboard()
         {
             InitializeComponent();
         }
@@ -55,6 +55,21 @@ namespace FinalProject
             }
         
     }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

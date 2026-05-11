@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class TechnicianDashboard : Form
+    public partial class  TechnicianDashboard : Form
     {
         public TechnicianDashboard()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
