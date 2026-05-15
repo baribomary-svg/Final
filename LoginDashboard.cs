@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +16,14 @@ namespace FinalProject
     {
         public LoginDashboard()
         {
+
             InitializeComponent();
+
+
         }
 
-       
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
         }
@@ -53,8 +58,8 @@ namespace FinalProject
             {
                 MessageBox.Show("Invalid Login");
             }
-        
-    }
+
+        }
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -68,9 +73,10 @@ namespace FinalProject
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
-
-    

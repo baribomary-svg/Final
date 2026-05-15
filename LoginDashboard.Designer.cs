@@ -34,15 +34,15 @@ namespace FinalProject
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogIn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.bntSignup = new System.Windows.Forms.Button();
+            this.txtConfirmPassword = new System.Windows.Forms.TextBox();
+            this.btnLogIn = new System.Windows.Forms.Button();
+            this.cmbRole = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -89,20 +89,6 @@ namespace FinalProject
             this.txtPassword.Size = new System.Drawing.Size(203, 20);
             this.txtPassword.TabIndex = 3;
             // 
-            // btnLogIn
-            // 
-            this.btnLogIn.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogIn.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogIn.Location = new System.Drawing.Point(132, 373);
-            this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(117, 30);
-            this.btnLogIn.TabIndex = 11;
-            this.btnLogIn.Text = "Log In";
-            this.btnLogIn.UseVisualStyleBackColor = false;
-            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -115,32 +101,6 @@ namespace FinalProject
             this.label4.TabIndex = 8;
             this.label4.Text = "Welcome Back!";
             this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // cmbRole
-            // 
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Items.AddRange(new object[] {
-            "Customer",
-            "Cashier",
-            "Staff",
-            "Technician",
-            "Admin"});
-            this.cmbRole.Location = new System.Drawing.Point(132, 320);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(243, 21);
-            this.cmbRole.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(129, 301);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 16);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Role:";
             // 
             // pictureBox3
             // 
@@ -162,6 +122,7 @@ namespace FinalProject
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -179,24 +140,60 @@ namespace FinalProject
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightSteelBlue;
-            this.label5.Location = new System.Drawing.Point(129, 273);
+            this.label5.Location = new System.Drawing.Point(129, 286);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 13);
             this.label5.TabIndex = 17;
             this.label5.Text = "Confirm Password";
             // 
-            // bntSignup
+            // txtConfirmPassword
             // 
-            this.bntSignup.BackColor = System.Drawing.Color.ForestGreen;
-            this.bntSignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntSignup.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntSignup.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bntSignup.Location = new System.Drawing.Point(298, 373);
-            this.bntSignup.Name = "bntSignup";
-            this.bntSignup.Size = new System.Drawing.Size(117, 30);
-            this.bntSignup.TabIndex = 18;
-            this.bntSignup.Text = "Sign Up";
-            this.bntSignup.UseVisualStyleBackColor = false;
+            this.txtConfirmPassword.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtConfirmPassword.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtConfirmPassword.Location = new System.Drawing.Point(132, 302);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(203, 20);
+            this.txtConfirmPassword.TabIndex = 19;
+            // 
+            // btnLogIn
+            // 
+            this.btnLogIn.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogIn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogIn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLogIn.Location = new System.Drawing.Point(190, 403);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(117, 30);
+            this.btnLogIn.TabIndex = 11;
+            this.btnLogIn.Text = "Log In";
+            this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            // 
+            // cmbRole
+            // 
+            this.cmbRole.FormattingEnabled = true;
+            this.cmbRole.Items.AddRange(new object[] {
+            "Customer",
+            "Cashier",
+            "Staff",
+            "Technician",
+            "Admin"});
+            this.cmbRole.Location = new System.Drawing.Point(132, 363);
+            this.cmbRole.Name = "cmbRole";
+            this.cmbRole.Size = new System.Drawing.Size(243, 21);
+            this.cmbRole.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(129, 344);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 16);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Role:";
             // 
             // LoginDashboard
             // 
@@ -204,7 +201,7 @@ namespace FinalProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(521, 471);
-            this.Controls.Add(this.bntSignup);
+            this.Controls.Add(this.txtConfirmPassword);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
@@ -234,15 +231,15 @@ namespace FinalProject
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbRole;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button bntSignup;
+        private System.Windows.Forms.TextBox txtConfirmPassword;
+        private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.ComboBox cmbRole;
+        private System.Windows.Forms.Label label3;
     }
 }
 
