@@ -107,6 +107,12 @@
     <Compile Include="RequestService.Designer.cs">
       <DependentUpon>RequestService.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="TechnicianDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TechnicianDashboard.resx">
       <DependentUpon>TechnicianDashboard.cs</DependentUpon>
     </EmbeddedResource>

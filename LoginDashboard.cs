@@ -18,59 +18,27 @@ namespace FinalProject
             InitializeComponent();
         }
 
-       
+
         private void Form1_Load(object sender, EventArgs e)
         {
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            string username = txtUserName.Text;
-            string password = txtPassword.Text;
-            string role = cmbRole.Text;
+            SignIn register = new SignIn();
+            register.Show();
+            this.Hide();
 
-            if (username == "Admin" && password == "123" && role == "Admin")
-            {
-                new AdminDashboard().Show();
-                this.Hide();
-            }
-            else if (role == "Cashier" || role == "Staff")
-            {
-                new CashierDashboard().Show();
-                this.Hide();
-            }
-            else if (role == "Technician")
-            {
-                new TechnicianDashboard().Show();
-                this.Hide();
-            }
-            else if (role == "Customer")
-            {
-                new CustomerDashboard().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Invalid Login");
-            }
-        
-    }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void lblSignIn_Click(object sender, EventArgs e)
         {
+            SignIn signin = new SignIn();
+            signin.Show();
+            this.Hide();
 
         }
     }
-}
-
-    
+    }
