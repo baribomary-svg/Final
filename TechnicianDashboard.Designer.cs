@@ -400,7 +400,7 @@
             this.Date});
             this.dataGridViewList.Location = new System.Drawing.Point(292, 232);
             this.dataGridViewList.Name = "dataGridViewList";
-            this.dataGridViewList.Size = new System.Drawing.Size(928, 168);
+            this.dataGridViewList.Size = new System.Drawing.Size(940, 168);
             this.dataGridViewList.TabIndex = 36;
             // 
             // Reqnum
