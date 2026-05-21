@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class RequestService
+    partial class Parts
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RequestService));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Parts));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bntPartsInventory = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.bntHistory = new System.Windows.Forms.Button();
             this.bntServicerequest = new System.Windows.Forms.Button();
             this.bntDashboard = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -85,36 +85,6 @@
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 355);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 18;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 221);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::FinalProject.Properties.Resources.powerup;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(268, 109);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkGreen;
@@ -130,9 +100,19 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(12, 355);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 18;
+            this.pictureBox5.TabStop = false;
+            // 
             // bntPartsInventory
             // 
-            this.bntPartsInventory.BackColor = System.Drawing.Color.DarkGreen;
+            this.bntPartsInventory.BackColor = System.Drawing.Color.OliveDrab;
             this.bntPartsInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntPartsInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntPartsInventory.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -144,6 +124,16 @@
             this.bntPartsInventory.Text = "Parts / Inventory";
             this.bntPartsInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntPartsInventory.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 221);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // bntHistory
             // 
@@ -162,7 +152,7 @@
             // 
             // bntServicerequest
             // 
-            this.bntServicerequest.BackColor = System.Drawing.Color.OliveDrab;
+            this.bntServicerequest.BackColor = System.Drawing.Color.DarkGreen;
             this.bntServicerequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntServicerequest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntServicerequest.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -190,6 +180,16 @@
             this.bntDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntDashboard.UseVisualStyleBackColor = false;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::FinalProject.Properties.Resources.powerup;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(268, 109);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
@@ -200,7 +200,7 @@
             this.panel1.Location = new System.Drawing.Point(268, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1156, 49);
-            this.panel1.TabIndex = 40;
+            this.panel1.TabIndex = 42;
             // 
             // label1
             // 
@@ -232,7 +232,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 861);
-            this.panel2.TabIndex = 38;
+            this.panel2.TabIndex = 41;
             // 
             // pictureBox4
             // 
@@ -244,16 +244,17 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
-            // RequestService
+            // Parts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1424, 861);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "RequestService";
+            this.Name = "Parts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -274,14 +275,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button bntPartsInventory;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button bntHistory;
         private System.Windows.Forms.Button bntServicerequest;
         private System.Windows.Forms.Button bntDashboard;
+        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;

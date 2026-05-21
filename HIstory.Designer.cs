@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class RequestService
+    partial class History
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RequestService));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(History));
             this.button2 = new System.Windows.Forms.Button();
             this.bntPartsInventory = new System.Windows.Forms.Button();
             this.bntHistory = new System.Windows.Forms.Button();
@@ -43,17 +37,142 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkGreen;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.Location = new System.Drawing.Point(56, 411);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(170, 41);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Logout";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // bntPartsInventory
+            // 
+            this.bntPartsInventory.BackColor = System.Drawing.Color.DarkGreen;
+            this.bntPartsInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntPartsInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntPartsInventory.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bntPartsInventory.Location = new System.Drawing.Point(56, 344);
+            this.bntPartsInventory.Name = "bntPartsInventory";
+            this.bntPartsInventory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bntPartsInventory.Size = new System.Drawing.Size(170, 41);
+            this.bntPartsInventory.TabIndex = 19;
+            this.bntPartsInventory.Text = "Parts / Inventory";
+            this.bntPartsInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntPartsInventory.UseVisualStyleBackColor = false;
+            // 
+            // bntHistory
+            // 
+            this.bntHistory.BackColor = System.Drawing.Color.OliveDrab;
+            this.bntHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntHistory.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bntHistory.Location = new System.Drawing.Point(56, 278);
+            this.bntHistory.Name = "bntHistory";
+            this.bntHistory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bntHistory.Size = new System.Drawing.Size(170, 41);
+            this.bntHistory.TabIndex = 16;
+            this.bntHistory.Text = "History";
+            this.bntHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntHistory.UseVisualStyleBackColor = false;
+            // 
+            // bntServicerequest
+            // 
+            this.bntServicerequest.BackColor = System.Drawing.Color.DarkGreen;
+            this.bntServicerequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntServicerequest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntServicerequest.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bntServicerequest.Location = new System.Drawing.Point(56, 210);
+            this.bntServicerequest.Name = "bntServicerequest";
+            this.bntServicerequest.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bntServicerequest.Size = new System.Drawing.Size(170, 41);
+            this.bntServicerequest.TabIndex = 14;
+            this.bntServicerequest.Text = "Service Request";
+            this.bntServicerequest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntServicerequest.UseVisualStyleBackColor = false;
+            // 
+            // bntDashboard
+            // 
+            this.bntDashboard.BackColor = System.Drawing.Color.DarkGreen;
+            this.bntDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntDashboard.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bntDashboard.Location = new System.Drawing.Point(56, 145);
+            this.bntDashboard.Name = "bntDashboard";
+            this.bntDashboard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.bntDashboard.Size = new System.Drawing.Size(170, 41);
+            this.bntDashboard.TabIndex = 3;
+            this.bntDashboard.Text = "Dashboard";
+            this.bntDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bntDashboard.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(268, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1156, 49);
+            this.panel1.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(895, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 18);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Customer";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.bntPartsInventory);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.bntHistory);
+            this.panel2.Controls.Add(this.bntServicerequest);
+            this.panel2.Controls.Add(this.bntDashboard);
+            this.panel2.Controls.Add(this.pictureBox8);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(268, 861);
+            this.panel2.TabIndex = 41;
             // 
             // pictureBox1
             // 
@@ -105,135 +224,6 @@
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::FinalProject.Properties.Resources.powerup;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(268, 109);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DarkGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(56, 411);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(170, 41);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Logout";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // bntPartsInventory
-            // 
-            this.bntPartsInventory.BackColor = System.Drawing.Color.DarkGreen;
-            this.bntPartsInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntPartsInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntPartsInventory.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bntPartsInventory.Location = new System.Drawing.Point(56, 344);
-            this.bntPartsInventory.Name = "bntPartsInventory";
-            this.bntPartsInventory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bntPartsInventory.Size = new System.Drawing.Size(170, 41);
-            this.bntPartsInventory.TabIndex = 19;
-            this.bntPartsInventory.Text = "Parts / Inventory";
-            this.bntPartsInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntPartsInventory.UseVisualStyleBackColor = false;
-            // 
-            // bntHistory
-            // 
-            this.bntHistory.BackColor = System.Drawing.Color.DarkGreen;
-            this.bntHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntHistory.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bntHistory.Location = new System.Drawing.Point(56, 278);
-            this.bntHistory.Name = "bntHistory";
-            this.bntHistory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bntHistory.Size = new System.Drawing.Size(170, 41);
-            this.bntHistory.TabIndex = 16;
-            this.bntHistory.Text = "History";
-            this.bntHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntHistory.UseVisualStyleBackColor = false;
-            // 
-            // bntServicerequest
-            // 
-            this.bntServicerequest.BackColor = System.Drawing.Color.OliveDrab;
-            this.bntServicerequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntServicerequest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntServicerequest.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bntServicerequest.Location = new System.Drawing.Point(56, 210);
-            this.bntServicerequest.Name = "bntServicerequest";
-            this.bntServicerequest.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bntServicerequest.Size = new System.Drawing.Size(170, 41);
-            this.bntServicerequest.TabIndex = 14;
-            this.bntServicerequest.Text = "Service Request";
-            this.bntServicerequest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntServicerequest.UseVisualStyleBackColor = false;
-            // 
-            // bntDashboard
-            // 
-            this.bntDashboard.BackColor = System.Drawing.Color.DarkGreen;
-            this.bntDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntDashboard.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bntDashboard.Location = new System.Drawing.Point(56, 145);
-            this.bntDashboard.Name = "bntDashboard";
-            this.bntDashboard.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.bntDashboard.Size = new System.Drawing.Size(170, 41);
-            this.bntDashboard.TabIndex = 3;
-            this.bntDashboard.Text = "Dashboard";
-            this.bntDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bntDashboard.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(0)))));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(268, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1156, 49);
-            this.panel1.TabIndex = 40;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(895, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Customer";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.bntPartsInventory);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.bntHistory);
-            this.panel2.Controls.Add(this.bntServicerequest);
-            this.panel2.Controls.Add(this.bntDashboard);
-            this.panel2.Controls.Add(this.pictureBox8);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(268, 861);
-            this.panel2.TabIndex = 38;
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
@@ -244,7 +234,17 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
-            // RequestService
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::FinalProject.Properties.Resources.powerup;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(268, 109);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 9;
+            this.pictureBox8.TabStop = false;
+            // 
+            // History
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -253,18 +253,18 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "RequestService";
+            this.Name = "History";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,14 +274,14 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button bntPartsInventory;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button bntHistory;
         private System.Windows.Forms.Button bntServicerequest;
         private System.Windows.Forms.Button bntDashboard;
+        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;

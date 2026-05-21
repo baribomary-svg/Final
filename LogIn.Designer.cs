@@ -30,18 +30,15 @@ namespace FinalProject
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.txtConfirm = new System.Windows.Forms.TextBox();
             this.lblSignIn = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,17 +49,15 @@ namespace FinalProject
             this.cmbRole = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnTogglePassword = new System.Windows.Forms.Button();
+            this.btnToggleConfirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // txtUserName
             // 
             this.txtUserName.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtUserName.Location = new System.Drawing.Point(92, 250);
+            this.txtUserName.Location = new System.Drawing.Point(104, 250);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(243, 20);
             this.txtUserName.TabIndex = 4;
@@ -73,7 +68,7 @@ namespace FinalProject
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(89, 288);
+            this.label2.Location = new System.Drawing.Point(101, 288);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 2;
@@ -85,7 +80,7 @@ namespace FinalProject
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(89, 231);
+            this.label1.Location = new System.Drawing.Point(101, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 15);
             this.label1.TabIndex = 1;
@@ -95,9 +90,9 @@ namespace FinalProject
             // 
             this.txtPassword.BackColor = System.Drawing.SystemColors.Menu;
             this.txtPassword.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txtPassword.Location = new System.Drawing.Point(92, 307);
+            this.txtPassword.Location = new System.Drawing.Point(104, 307);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(203, 20);
+            this.txtPassword.Size = new System.Drawing.Size(215, 20);
             this.txtPassword.TabIndex = 3;
             // 
             // label4
@@ -111,26 +106,6 @@ namespace FinalProject
             this.label4.Size = new System.Drawing.Size(313, 46);
             this.label4.TabIndex = 8;
             this.label4.Text = "Welcome Back!";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::FinalProject.Properties.Resources.Gemini_Generated_Image_lq4gealq4gealq4g__3_;
-            this.pictureBox3.Location = new System.Drawing.Point(341, 307);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FinalProject.Properties.Resources.Gemini_Generated_Image_lq4gealq4gealq4g__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(301, 307);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -148,40 +123,20 @@ namespace FinalProject
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(89, 335);
+            this.label5.Location = new System.Drawing.Point(101, 335);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 15);
             this.label5.TabIndex = 17;
             this.label5.Text = "Confirm Password";
             // 
-            // textBox1
+            // txtConfirm
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(91, 353);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 20);
-            this.textBox1.TabIndex = 18;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::FinalProject.Properties.Resources.Gemini_Generated_Image_lq4gealq4gealq4g__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(301, 353);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(34, 20);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::FinalProject.Properties.Resources.Gemini_Generated_Image_lq4gealq4gealq4g__3_;
-            this.pictureBox5.Location = new System.Drawing.Point(341, 353);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(34, 20);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 20;
-            this.pictureBox5.TabStop = false;
+            this.txtConfirm.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtConfirm.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtConfirm.Location = new System.Drawing.Point(103, 353);
+            this.txtConfirm.Name = "txtConfirm";
+            this.txtConfirm.Size = new System.Drawing.Size(215, 20);
+            this.txtConfirm.TabIndex = 18;
             // 
             // lblSignIn
             // 
@@ -202,7 +157,7 @@ namespace FinalProject
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(89, 90);
+            this.label6.Location = new System.Drawing.Point(101, 90);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 15);
             this.label6.TabIndex = 23;
@@ -214,7 +169,7 @@ namespace FinalProject
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(89, 137);
+            this.label7.Location = new System.Drawing.Point(101, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 15);
             this.label7.TabIndex = 24;
@@ -223,7 +178,7 @@ namespace FinalProject
             // txtFirstName
             // 
             this.txtFirstName.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtFirstName.Location = new System.Drawing.Point(92, 109);
+            this.txtFirstName.Location = new System.Drawing.Point(104, 109);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(243, 20);
             this.txtFirstName.TabIndex = 25;
@@ -231,7 +186,7 @@ namespace FinalProject
             // txtLastName
             // 
             this.txtLastName.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtLastName.Location = new System.Drawing.Point(92, 156);
+            this.txtLastName.Location = new System.Drawing.Point(104, 156);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(243, 20);
             this.txtLastName.TabIndex = 26;
@@ -239,7 +194,7 @@ namespace FinalProject
             // txtEmail
             // 
             this.txtEmail.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtEmail.Location = new System.Drawing.Point(92, 203);
+            this.txtEmail.Location = new System.Drawing.Point(104, 203);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(243, 20);
             this.txtEmail.TabIndex = 28;
@@ -278,7 +233,7 @@ namespace FinalProject
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(89, 184);
+            this.label8.Location = new System.Drawing.Point(101, 184);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(39, 15);
             this.label8.TabIndex = 27;
@@ -296,12 +251,40 @@ namespace FinalProject
             this.label9.TabIndex = 29;
             this.label9.Text = "You have already an account?";
             // 
+            // btnTogglePassword
+            // 
+            this.btnTogglePassword.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnTogglePassword.FlatAppearance.BorderSize = 0;
+            this.btnTogglePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTogglePassword.Image = ((System.Drawing.Image)(resources.GetObject("btnTogglePassword.Image")));
+            this.btnTogglePassword.Location = new System.Drawing.Point(322, 307);
+            this.btnTogglePassword.Name = "btnTogglePassword";
+            this.btnTogglePassword.Size = new System.Drawing.Size(25, 20);
+            this.btnTogglePassword.TabIndex = 30;
+            this.btnTogglePassword.UseVisualStyleBackColor = false;
+            this.btnTogglePassword.Click += new System.EventHandler(this.btnTogglePassword_Click);
+            // 
+            // btnToggleConfirm
+            // 
+            this.btnToggleConfirm.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnToggleConfirm.FlatAppearance.BorderSize = 0;
+            this.btnToggleConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnToggleConfirm.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleConfirm.Image")));
+            this.btnToggleConfirm.Location = new System.Drawing.Point(322, 353);
+            this.btnToggleConfirm.Name = "btnToggleConfirm";
+            this.btnToggleConfirm.Size = new System.Drawing.Size(25, 20);
+            this.btnToggleConfirm.TabIndex = 32;
+            this.btnToggleConfirm.UseVisualStyleBackColor = false;
+            this.btnToggleConfirm.Click += new System.EventHandler(this.btnToggleConfirm_Click);
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.btnToggleConfirm);
+            this.Controls.Add(this.btnTogglePassword);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label8);
@@ -310,12 +293,8 @@ namespace FinalProject
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblSignIn);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtConfirm);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.label4);
@@ -323,14 +302,13 @@ namespace FinalProject
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "LogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,12 +322,8 @@ namespace FinalProject
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox txtConfirm;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblSignIn;
         private System.Windows.Forms.Label label6;
@@ -361,6 +335,8 @@ namespace FinalProject
         private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnTogglePassword;
+        private System.Windows.Forms.Button btnToggleConfirm;
     }
 }
 

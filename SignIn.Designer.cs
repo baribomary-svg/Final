@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignIn));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bntSignIn = new System.Windows.Forms.Button();
+            this.btnTogglePassword = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,7 +83,7 @@
             this.txtUserName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUserName.Location = new System.Drawing.Point(129, 137);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(215, 20);
+            this.txtUserName.Size = new System.Drawing.Size(243, 20);
             this.txtUserName.TabIndex = 3;
             // 
             // txtPassword
@@ -129,7 +131,7 @@
             "Admin"});
             this.cmbRole.Location = new System.Drawing.Point(129, 229);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(215, 21);
+            this.cmbRole.Size = new System.Drawing.Size(243, 21);
             this.cmbRole.TabIndex = 8;
             // 
             // label6
@@ -168,12 +170,26 @@
             this.bntSignIn.UseVisualStyleBackColor = false;
             this.bntSignIn.Click += new System.EventHandler(this.bntSignIn_Click);
             // 
+            // btnTogglePassword
+            // 
+            this.btnTogglePassword.BackColor = System.Drawing.SystemColors.Menu;
+            this.btnTogglePassword.FlatAppearance.BorderSize = 0;
+            this.btnTogglePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTogglePassword.Image = ((System.Drawing.Image)(resources.GetObject("btnTogglePassword.Image")));
+            this.btnTogglePassword.Location = new System.Drawing.Point(347, 183);
+            this.btnTogglePassword.Name = "btnTogglePassword";
+            this.btnTogglePassword.Size = new System.Drawing.Size(25, 20);
+            this.btnTogglePassword.TabIndex = 31;
+            this.btnTogglePassword.UseVisualStyleBackColor = false;
+            this.btnTogglePassword.Click += new System.EventHandler(this.btnTogglePassword_Click);
+            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(484, 461);
+            this.Controls.Add(this.btnTogglePassword);
             this.Controls.Add(this.bntSignIn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
@@ -186,8 +202,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "SignIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.SignIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -208,5 +227,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button bntSignIn;
+        private System.Windows.Forms.Button btnTogglePassword;
     }
 }

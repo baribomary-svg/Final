@@ -102,7 +102,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(267, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1035, 49);
+            this.panel1.Size = new System.Drawing.Size(1158, 49);
             this.panel1.TabIndex = 66;
             // 
             // pictureBox7
@@ -461,7 +461,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(2, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(268, 631);
+            this.panel2.Size = new System.Drawing.Size(268, 860);
             this.panel2.TabIndex = 79;
             // 
             // pictureBox13
@@ -629,13 +629,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 630);
+            this.ClientSize = new System.Drawing.Size(1424, 861);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Products";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

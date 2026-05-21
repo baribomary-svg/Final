@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FinalProject
 {
-    public partial class Transaction : Form
+    public partial class Parts : Form
     {
-        public Transaction()
+        public Parts()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

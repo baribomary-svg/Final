@@ -16,6 +16,10 @@ namespace FinalProject
 {
     public partial class LogIn : Form
     {
+        private bool isPasswordVisible = false;
+        private bool isConfirmVisible = false;
+
+
         string connectionString =
             ConfigurationManager.ConnectionStrings["DB_FinalsProj"].ConnectionString;
         public LogIn()
@@ -23,6 +27,12 @@ namespace FinalProject
 
             InitializeComponent();
 
+            txtPassword.UseSystemPasswordChar = true;
+            txtConfirm.UseSystemPasswordChar = true;
+
+            // Default button text
+            btnTogglePassword.Text = "🚫👁";
+            btnToggleConfirm.Text = "🚫👁";
 
         }
 
@@ -84,5 +94,39 @@ namespace FinalProject
             signin.Show();
             this.Hide();
         }
+
+        private void btnTogglePassword_Click(object sender, EventArgs e)
+        {
+            isPasswordVisible = !isPasswordVisible;
+
+            txtPassword.UseSystemPasswordChar = !isPasswordVisible;
+
+            if (isPasswordVisible)
+            {
+                btnTogglePassword.Text = "👁";
+            }
+            else
+            {
+                btnTogglePassword.Text = "🚫👁";
+            }
+        }
+
+        private void btnToggleConfirm_Click(object sender, EventArgs e)
+        {
+            isConfirmVisible = !isConfirmVisible;
+
+            txtConfirm.UseSystemPasswordChar = !isConfirmVisible;
+
+            if (isConfirmVisible)
+            {
+                btnToggleConfirm.Text = "👁";
+            }
+            else
+            {
+                btnToggleConfirm.Text = "🚫👁";
+            }
+        }
     }
-    }
+}
+    
+    

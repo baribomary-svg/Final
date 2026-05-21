@@ -13,9 +13,17 @@ namespace FinalProject
 {
     public partial class SignIn : Form
     {
+
+        private bool isPasswordVisible = false;
+        private bool isConfirmVisible = false;
+
         public SignIn()
         {
             InitializeComponent();
+            txtPassword.UseSystemPasswordChar = true;
+
+            btnTogglePassword.Text = "🚫👁";
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,7 +41,7 @@ namespace FinalProject
                 this.Hide();
             }
 
-          
+
             else if (username == "cashier" && password == "123" && role == "Cashier")
             {
                 MessageBox.Show("Cashier Login Successful");
@@ -43,7 +51,7 @@ namespace FinalProject
                 this.Hide();
             }
 
-           
+
             else if (username == "technician" && password == "123" && role == "Technician")
             {
                 MessageBox.Show("Technician Login Successful");
@@ -80,6 +88,22 @@ namespace FinalProject
         {
 
         }
+
+        private void btnTogglePassword_Click(object sender, EventArgs e)
+        {
+            isPasswordVisible = !isPasswordVisible;
+
+            txtPassword.UseSystemPasswordChar = !isPasswordVisible;
+
+            if (isPasswordVisible)
+            {
+                btnTogglePassword.Text = "👁";
+            }
+            else
+            {
+                btnTogglePassword.Text = "🚫👁";
+            }
+        }
     }
-    }
+}
 
