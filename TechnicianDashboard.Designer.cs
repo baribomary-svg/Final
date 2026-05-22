@@ -90,6 +90,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label9);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Location = new System.Drawing.Point(572, 74);
@@ -123,6 +124,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(848, 74);
@@ -156,6 +158,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(1138, 74);
@@ -257,6 +260,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(292, 74);
@@ -437,6 +441,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(268, 861);
             this.panel9.TabIndex = 45;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // pictureBox9
             // 
